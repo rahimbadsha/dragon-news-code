@@ -21,6 +21,7 @@ const Login = () => {
     signIn(email, pass)
       .then((result) => {
         const user = result.user;
+        alert(user, " Created")
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
